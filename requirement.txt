@@ -1,7 +1,8 @@
 numpy
-pandas 
+pandas
+joblib 
 scikit-learn
-streamlit
 feature-engine
 xgboost
-joblib
+streamlit
+
