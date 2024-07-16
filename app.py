@@ -28,11 +28,11 @@ import warnings
 import matplotlib.pyplot as plt
 import os
 import xgboost as xgb
-
+import os 
 sklearn.set_config(transform_output='pandas')
 warnings.filterwarnings('ignore')
-path = r"D:\Ml projects\car dekho\flights practice\data\train.csv"
-train = pd.read_csv(path)
+dir_path = r"D:\Ml projects\car dekho\flights practice\data"
+train = pd.read_csv(os.path.join(dir_path,"train.csv"))
 train.head()
 x_train = train.drop(columns='price')
 y_train = train.price.copy()
